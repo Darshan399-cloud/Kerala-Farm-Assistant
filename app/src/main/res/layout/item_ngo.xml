@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header with Category Icon and Verification -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_ngo_support" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvNgoName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NGO Name"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+
+                    <ImageView
+                        android:id="@+id/ivVerified"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ic_verified"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvNgoCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="12sp"
+                    android:background="@drawable/category_badge"
+                    android:padding="4dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNgoRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8 ⭐"
+                android:textColor="@color/warning"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/rating_badge"
+                android:padding="6dp" />
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvNgoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NGO Description"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/tvNgoLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Location"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Services -->
+        <TextView
+            android:id="@+id/tvNgoServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛠️ Services"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Contact Info -->
+        <TextView
+            android:id="@+id/tvContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 Contact Info"
+            android:textColor="@color/success"
+            android:textSize="11sp"
+            android:background="@drawable/contact_info_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/btnCall"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_call"
+                android:background="@drawable/action_button_bg"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:foreground="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/btnEmail"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_email"
+                android:background="@drawable/action_button_bg"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:foreground="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/btnWebsite"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_website"
+                android:background="@drawable/action_button_bg"
+                android:padding="8dp"
+                android:foreground="?attr/selectableItemBackground" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

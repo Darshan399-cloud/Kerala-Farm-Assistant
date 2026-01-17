@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Internal storage -->
+    <files-path name="internal_files" path="." />
+    
+    <!-- External storage -->
+    <external-files-path name="external_files" path="." />
+    
+    <!-- External public directory -->
+    <external-path name="external_public" path="." />
+    
+    <!-- Cache directory -->
+    <cache-path name="cache_files" path="." />
+    
+    <!-- External cache directory -->
+    <external-cache-path name="external_cache" path="." />
+    
+    <!-- Pictures directory for camera images -->
+    <external-files-path name="images" path="Pictures" />
+</paths>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Camera/Image Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+                        
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/plant_disease_detection"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                            
+                        <!-- Language Selection -->
+                        <Spinner
+                            android:id="@+id/spinnerLanguage"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/spinner_bg" />
+                    </LinearLayout>
+
+                    <!-- Image Display -->
+                    <ImageView
+                        android:id="@+id/ivPlantImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/image_placeholder_bg"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Plant image for analysis" />
+
+                    <!-- Camera Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnTakePhoto"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/take_photo"
+                            app:icon="@drawable/ic_camera"
+                            style="@style/Widget.MaterialComponents.Button" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSelectImage"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/select_from_gallery"
+                            app:icon="@drawable/ic_gallery"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                    </LinearLayout>
+
+                    <!-- Analyze Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAnalyze"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/analyze_disease"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:cornerRadius="8dp"
+                        style="@style/Widget.MaterialComponents.Button" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Analysis Progress -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analyzing_image"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Disease Detection Results -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/disease_detected"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvConfidence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="85%"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/confidence_badge"
+                            android:padding="6dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDiseaseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rice Blast Disease"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvDiseaseDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fungal disease affecting rice leaves and stems"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Action Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnViewTreatment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/view_treatment"
+                            app:icon="@drawable/ic_medical"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSpeakAdvice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/speak_recommendation"
+                            app:icon="@drawable/ic_speak"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Treatment Recommendations -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Treatment Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/treatment_recommendation"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@drawable/ic_medical"
+                        android:drawablePadding="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvTreatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply fungicide, remove affected parts"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="16dp"
+                        android:lineSpacingExtra="2dp" />
+
+                    <!-- Fertilizer Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fertilizer_recommendation"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@drawable/ic_fertilizer"
+                        android:drawablePadding="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/tvFertilizer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Potash fertilizer, balanced NPK"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:lineSpacingExtra="2dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivFertilizerImage"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_fertilizer_npk"
+                            android:scaleType="centerInside"
+                            android:background="@drawable/circle_bg"
+                            android:padding="8dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <!-- Water Requirement Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/water_requirement"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@drawable/ic_water"
+                        android:drawablePadding="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvWaterRequirement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Moderate watering, avoid waterlogging"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="16dp"
+                        android:lineSpacingExtra="2dp" />
+
+                    <!-- Application Method Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/application_method"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@drawable/ic_method"
+                        android:drawablePadding="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvApplicationMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spray in evening, cover all affected areas"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Recent Detections -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recent_detections"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRecentDetections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/tvNoDetections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_recent_detections"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:padding="24dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

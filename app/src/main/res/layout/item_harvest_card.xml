@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Crop Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCropName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basmati Rice"
+                    android:textColor="@color/text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVariety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pusa Basmati 1509"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <!-- Organic Badge -->
+            <TextView
+                android:id="@+id/tvOrganicBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌱 ORGANIC"
+                android:textColor="@color/success"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_organic_badge"
+                android:padding="6dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Farmer Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvFarmerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Rajesh Kumar"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="6dp"
+                app:drawableTint="@color/primary" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Palakkad District, Kerala"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="6dp"
+                app:drawableTint="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Harvest Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Quantity -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250.5 kg"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <!-- Quality Grade -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quality"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvQualityGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grade A"
+                    android:textColor="@color/success"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <!-- Harvest Date -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvHarvestDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harvested: Jan 15"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- QR Code & Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_footer"
+            android:padding="8dp">
+
+            <!-- QR Code Info -->
+            <TextView
+                android:id="@+id/tvQrCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QR: QR001234567890"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="monospace" />
+
+            <!-- QR Code Button -->
+            <ImageView
+                android:id="@+id/btnQrCode"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_qr_code"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="6dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Generate QR Code"
+                app:tint="@color/primary" />
+
+            <!-- Share Button -->
+            <ImageView
+                android:id="@+id/btnShare"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="6dp"
+                android:contentDescription="Share Harvest Card"
+                app:tint="@color/primary" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

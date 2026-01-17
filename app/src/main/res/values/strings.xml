@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">Kerala FarmAssist</string>
+    
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="farmer_name">Farmer Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="farm_location">Farm Location</string>
+    <string name="farm_size">Farm Size (Acres)</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_out">Sign Out</string>
+    
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="weather">Weather</string>
+    <string name="advisor">AI Advisor</string>
+    <string name="market_prices">Market Prices</string>
+    <string name="chatbot">Chat Helper</string>
+    <string name="traceability">Harvest Card</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Weather Module -->
+    <string name="current_weather">Current Weather</string>
+    <string name="past_5_days">Past 5 Days</string>
+    <string name="next_5_days">Next 5 Days</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="rainfall">Rainfall</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="weather_advice">Weather Advice</string>
+    
+    <!-- AI Advisor -->
+    <string name="plant_disease_detection">Plant Disease Detection</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="analyzing_image">Analyzing plant image...</string>
+    <string name="disease_detected">Disease Detected</string>
+    <string name="treatment_recommendation">Treatment Recommendation</string>
+    <string name="fertilizer_recommendation">Fertilizer Recommendation</string>
+    <string name="water_requirement">Water Requirement</string>
+    <string name="application_method">Application Method</string>
+    <string name="speak_recommendation">Speak Recommendation</string>
+    
+    <!-- Market Prices -->
+    <string name="crop_prices">Crop Prices</string>
+    <string name="rice">Rice</string>
+    <string name="coconut">Coconut</string>
+    <string name="pepper">Pepper</string>
+    <string name="cardamom">Cardamom</string>
+    <string name="rubber">Rubber</string>
+    <string name="banana">Banana</string>
+    <string name="price_per_kg">Price per Kg</string>
+    <string name="market_trend">Market Trend</string>
+    <string name="last_updated">Last Updated</string>
+    
+    <!-- Chatbot -->
+    <string name="ask_question">Ask your farming question...</string>
+    <string name="send">Send</string>
+    <string name="typing">Typing...</string>
+    <string name="farming_assistant">Farming Assistant</string>
+    
+    <!-- Traceability -->
+    <string name="harvest_card">Harvest Card</string>
+    <string name="generate_qr">Generate QR Code</string>
+    <string name="scan_qr">Scan QR Code</string>
+    <string name="crop_details">Crop Details</string>
+    <string name="harvest_date">Harvest Date</string>
+    <string name="farm_history">Farm History</string>
+    <string name="pesticide_used">Pesticides Used</string>
+    <string name="organic_status">Organic Status</string>
+    <string name="carbon_footprint">Carbon Footprint</string>
+    <string name="ngo_support">NGO Support</string>
+    <string name="farm_assistant_chat">Farm Assistant Chat</string>
+    <string name="create_harvest_card">Create Harvest Card</string>
+    <string name="harvest_card_details">Harvest Card Details</string>
+    
+    <!-- NGO Support -->
+    <string name="contact_ngo">Contact %s</string>
+    <string name="location_label">Location:</string>
+    <string name="services_label">Services:</string>
+    <string name="choose_contact_method">Choose how to contact:</string>
+    <string name="call_button">📞 Call</string>
+    <string name="email_button">📧 Email</string>
+    <string name="website_button">🌐 Website</string>
+    <string name="request_help_from_ngos">Request Help from NGOs</string>
+    <string name="no_email_app">No email app found</string>
+    <string name="no_browser_found">No browser found</string>
+    <string name="farming_support_request">Request for Farming Support</string>
+    <string name="help_message">Hello, I am a farmer using Kerala Farm Assistant App. I need support and guidance for my farming activities. Please let me know how you can help me. Thank you!</string>
+    <string name="inquiry_subject">Inquiry from Kerala Farm Assistant App User</string>
+    <string name="email_template">Hello %1$s,\n\nI am a farmer using Kerala Farm Assistant App and I would like to know more about your services.\n\nPlease provide information about:\n- Available services\n- Application process\n- Required documents\n\nThank you!</string>
+    
+    <!-- Market Price -->
+    <string name="per_unit">per %s</string>
+    <string name="updated_on">Updated: %s</string>
+    <string name="error_loading_prices">Error loading prices: %s</string>
+    <string name="location_emoji_label">📍 %s</string>
+    <string name="services_emoji_label">🛠️ %s</string>
+    <string name="government_schemes">Government Schemes</string>
+    <string name="satellite_view">Satellite View</string>
+    
+    <!-- Settings -->
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="malayalam">മലയാളം</string>
+    <string name="notifications">Notifications</string>
+    <string name="location_access">Location Access</string>
+    <string name="camera_permission">Camera Permission</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="try_again">Try Again</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">Camera permission is required to take photos of plants</string>
+    <string name="location_permission_required">Location permission is required for weather information</string>
+    <string name="storage_permission_required">Storage permission is required to save images</string>
+    
+    <!-- Error Messages -->
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+    <string name="passwords_dont_match">Passwords do not match</string>
+    <string name="login_failed">Login failed. Please check your credentials</string>
+    <string name="registration_failed">Registration failed. Please try again</string>
+    <string name="network_error">Network error. Please check your internet connection</string>
+    
+    <!-- Welcome Messages -->
+    <string name="welcome_user">Welcome back, %1$s!</string>
+    <string name="welcome_farmer">Welcome, Farmer!</string>
+    <string name="logout_success">Logged out successfully</string>
+    
+    <!-- Weather Module -->
+    <string name="refresh_weather">Refresh Weather</string>
+    <string name="weather_loading">Loading weather data...</string>
+    <string name="weather_error">Unable to load weather data</string>
+    
+    <!-- Day Names -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="yesterday">Yesterday</string>
+    
+    <!-- AI Advisor Module -->
+    <string name="analyze_disease">Analyze Plant Disease</string>
+    <string name="view_treatment">View Treatment</string>
+    <string name="recent_detections">Recent Detections</string>
+    <string name="no_recent_detections">No recent detections found</string>
+    <string name="hide_treatment">Hide Treatment</string>
+    <string name="speaking_recommendation">Speaking recommendation...</string>
+    <string name="select_language">Select Language</string>
+    
+    <!-- Language Arrays -->
+    <string-array name="language_options">
+        <item>English</item>
+        <item>हिंदी</item>
+        <item>മലയാളം</item>
+    </string-array>
+    
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>hi</item>
+        <item>ml</item>
+    </string-array>
+    
+    <!-- App Intro Strings -->
+    <string name="app_subtitle">Advanced Farming Assistant for Kerala Farmers</string>
+    <string name="app_features_title">Key Features</string>
+    <string name="app_about_title">About Kerala FarmAssist</string>
+    <string name="continue_to_app">Continue to App</string>
+    
+    <string name="feature_ai_detection">AI-Powered Disease Detection</string>
+    <string name="feature_weather_forecast">Weather Forecast &amp; Alerts</string>
+    <string name="feature_market_prices">Real-time Market Prices</string>
+    <string name="feature_multilingual_chat">Multilingual Chat Assistant</string>
+    <string name="feature_ngo_support">NGO Support Network</string>
+    
+    <string name="app_description">Kerala FarmAssist is your comprehensive farming companion designed specifically for Kerala farmers. Get expert advice, real-time weather updates, market prices, and connect with agricultural NGOs - all in your preferred language (English, Hindi, Malayalam). Enhance your farming productivity with AI-powered plant disease detection and personalized recommendations.</string>
+    
+</resources>

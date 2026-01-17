@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">केरल फार्म सहायक</string>
+    
+    <!-- Authentication -->
+    <string name="login">लॉगिन</string>
+    <string name="register">पंजीकरण</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="farmer_name">किसान का नाम</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="farm_location">खेत का स्थान</string>
+    <string name="farm_size">खेत का आकार (एकड़)</string>
+    <string name="create_account">खाता बनाएं</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="sign_out">साइन आउट</string>
+    
+    <!-- Navigation -->
+    <string name="home">होम</string>
+    <string name="weather">मौसम</string>
+    <string name="advisor">AI सलाहकार</string>
+    <string name="market_prices">बाजार भाव</string>
+    <string name="chatbot">चैट सहायक</string>
+    <string name="traceability">फसल कार्ड</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="settings">सेटिंग्स</string>
+    
+    <!-- Weather Module -->
+    <string name="current_weather">वर्तमान मौसम</string>
+    <string name="past_5_days">पिछले 5 दिन</string>
+    <string name="next_5_days">अगले 5 दिन</string>
+    <string name="temperature">तापमान</string>
+    <string name="humidity">नमी</string>
+    <string name="rainfall">बारिश</string>
+    <string name="wind_speed">हवा की गति</string>
+    <string name="weather_advice">मौसम सलाह</string>
+    
+    <!-- AI Advisor -->
+    <string name="plant_disease_detection">पौधे की बीमारी पहचान</string>
+    <string name="take_photo">फोटो लें</string>
+    <string name="select_from_gallery">गैलरी से चुनें</string>
+    <string name="analyzing_image">पौधे की छवि का विश्लेषण...</string>
+    <string name="disease_detected">बीमारी की पहचान</string>
+    <string name="treatment_recommendation">उपचार की सिफारिश</string>
+    <string name="fertilizer_recommendation">उर्वरक की सिफारिश</string>
+    <string name="water_requirement">पानी की आवश्यकता</string>
+    <string name="application_method">प्रयोग विधि</string>
+    <string name="speak_recommendation">सिफारिश सुनें</string>
+    
+    <!-- Market Prices -->
+    <string name="crop_prices">फसल की कीमतें</string>
+    <string name="rice">चावल</string>
+    <string name="coconut">नारियल</string>
+    <string name="pepper">मिर्च</string>
+    <string name="cardamom">इलायची</string>
+    <string name="rubber">रबड़</string>
+    <string name="banana">केला</string>
+    <string name="price_per_kg">प्रति किलो कीमत</string>
+    <string name="market_trend">बाजार रुझान</string>
+    <string name="last_updated">अंतिम अपडेट</string>
+    
+    <!-- Chatbot -->
+    <string name="ask_question">अपना खेती का सवाल पूछें...</string>
+    <string name="send">भेजें</string>
+    <string name="typing">टाइप कर रहा है...</string>
+    <string name="farming_assistant">खेती सहायक</string>
+    
+    <!-- Traceability -->
+    <string name="harvest_card">फसल कार्ड</string>
+    <string name="generate_qr">QR कोड बनाएं</string>
+    <string name="scan_qr">QR कोड स्कैन करें</string>
+    <string name="crop_details">फसल विवरण</string>
+    <string name="harvest_date">फसल तारीख</string>
+    <string name="farm_history">खेत का इतिहास</string>
+    <string name="pesticide_used">प्रयुक्त कीटनाशक</string>
+    <string name="organic_status">जैविक स्थिति</string>
+    <string name="carbon_footprint">कार्बन फुटप्रिंट</string>
+    <string name="ngo_support">एनजीओ सहायता</string>
+    <string name="farm_assistant_chat">फार्म सहायक चैट</string>
+    <string name="create_harvest_card">हार्वेस्ट कार्ड बनाएं</string>
+    <string name="harvest_card_details">हार्वेस्ट कार्ड विवरण</string>
+    
+    <!-- NGO Support -->
+    <string name="contact_ngo">%s से संपर्क करें</string>
+    <string name="location_label">स्थान:</string>
+    <string name="services_label">सेवाएं:</string>
+    <string name="choose_contact_method">संपर्क का तरीका चुनें:</string>
+    <string name="call_button">📞 कॉल करें</string>
+    <string name="email_button">📧 ईमेल</string>
+    <string name="website_button">🌐 वेबसाइट</string>
+    <string name="request_help_from_ngos">एनजीओ से मदद मांगें</string>
+    <string name="no_email_app">कोई ईमेल ऐप नहीं मिला</string>
+    <string name="no_browser_found">कोई ब्राउज़र नहीं मिला</string>
+    <string name="farming_support_request">खेती सहायता के लिए अनुरोध</string>
+    <string name="help_message">नमस्ते, मैं केरल फार्म असिस्टेंट ऐप का उपयोग करने वाला एक किसान हूं। मुझे अपनी खेती गतिविधियों के लिए सहायता और मार्गदर्शन की जरूरत है। कृपया मुझे बताएं कि आप मेरी कैसे मदद कर सकते हैं। धन्यवाद!</string>
+    <string name="inquiry_subject">केरल फार्म असिस्टेंट ऐप उपयोगकर्ता की ओर से पूछताछ</string>
+    <string name="email_template">नमस्ते %1$s,\n\nमैं केरल फार्म असिस्टेंट ऐप का उपयोग करने वाला किसान हूं और मैं आपकी सेवाओं के बारे में अधिक जानना चाहता हूं।\n\nकृपया इन के बारे में जानकारी प्रदान करें:\n- उपलब्ध सेवाएं\n- आवेदन प्रक्रिया\n- आवश्यक दस्तावेज\n\nधन्यवाद!</string>
+    
+    <!-- Market Price -->
+    <string name="per_unit">प्रति %s</string>
+    <string name="updated_on">अपडेट किया गया: %s</string>
+    <string name="error_loading_prices">कीमतें लोड करने में त्रुटि: %s</string>
+    <string name="location_emoji_label">📍 %s</string>
+    <string name="services_emoji_label">🛠️ %s</string>
+    <string name="government_schemes">सरकारी योजनाएं</string>
+    <string name="satellite_view">सैटेलाइट व्यू</string>
+    
+    <!-- Settings -->
+    <string name="language">भाषा</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="malayalam">മലയാളം</string>
+    <string name="notifications">सूचनाएं</string>
+    <string name="location_access">स्थान पहुंच</string>
+    <string name="camera_permission">कैमरा अनुमति</string>
+    
+    <!-- Common -->
+    <string name="ok">ठीक है</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सेव करें</string>
+    <string name="delete">डिलीट करें</string>
+    <string name="edit">संपादित करें</string>
+    <string name="share">साझा करें</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="error">त्रुटि</string>
+    <string name="success">सफल</string>
+    <string name="no_internet">इंटरनेट कनेक्शन नहीं</string>
+    <string name="try_again">फिर से कोशिश करें</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">पौधों की तस्वीरें लेने के लिए कैमरा अनुमति आवश्यक है</string>
+    <string name="location_permission_required">मौसम जानकारी के लिए स्थान अनुमति आवश्यक है</string>
+    <string name="storage_permission_required">छवियों को सहेजने के लिए स्टोरेज अनुमति आवश्यक है</string>
+    
+    <!-- Error Messages -->
+    <string name="invalid_email">कृपया वैध ईमेल दर्ज करें</string>
+    <string name="password_too_short">पासवर्ड कम से कम 6 अक्षर का होना चाहिए</string>
+    <string name="passwords_dont_match">पासवर्ड मैच नहीं करते</string>
+    <string name="login_failed">लॉगिन फेल। कृपया अपनी जानकारी जांचें</string>
+    <string name="registration_failed">पंजीकरण फेल। कृपया फिर से कोशिश करें</string>
+    <string name="network_error">नेटवर्क त्रुटि। कृपया अपना इंटरनेट कनेक्शन जांचें</string>
+    
+    <!-- Welcome Messages -->
+    <string name="welcome_user">वापसी पर स्वागत है, %1$s!</string>
+    <string name="welcome_farmer">स्वागत है, किसान!</string>
+    
+    <!-- App Intro Strings -->
+    <string name="app_subtitle">केरल किसानों के लिए उन्नत खेती सहायक</string>
+    <string name="app_features_title">मुख्य विशेषताएं</string>
+    <string name="app_about_title">केरल फार्म सहायक के बारे में</string>
+    <string name="continue_to_app">ऐप में जाएं</string>
+    <string name="select_language">भाषा चुनें</string>
+    
+    <string name="feature_ai_detection">AI-संचालित रोग पहचान</string>
+    <string name="feature_weather_forecast">मौसम पूर्वानुमान और अलर्ट</string>
+    <string name="feature_market_prices">रियल-टाइम बाजार भाव</string>
+    <string name="feature_multilingual_chat">बहुभाषी चैट सहायक</string>
+    <string name="feature_ngo_support">NGO सहायता नेटवर्क</string>
+    
+    <string name="app_description">केरल फार्म सहायक आपका व्यापक खेती साथी है जो विशेष रूप से केरल के किसानों के लिए डिज़ाइन किया गया है। विशेषज्ञ सलाह, रियल-टाइम मौसम अपडेट, बाजार की कीमतें प्राप्त करें, और कृषि NGO से जुड़ें - सभी आपकी पसंदीदा भाषा (अंग्रेजी, हिंदी, मलयालम) में। AI-संचालित पौधे रोग पहचान और व्यक्तिगत सिफारिशों के साथ अपनी खेती की उत्पादकता बढ़ाएं।</string>
+    
+</resources>
