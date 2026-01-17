@@ -17,3 +17,5 @@ I developed an Android-based “Kerala Farm Assistant” application aimed at em
 This application was successfully published and presented in a Hackathon, where it received positive feedback for its social impact, usability, and practical approach to solving real-world agricultural problems.
 
 💡 Built using Java for Android, the app focuses on accessibility, reliability, and farmer-friendly design
+
+Application download link = https://github.com/Darshan399-cloud/Kerala-Farm-Assistant/releases/tag/v1.0.0
